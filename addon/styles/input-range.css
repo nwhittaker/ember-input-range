@@ -1,0 +1,31 @@
+.-input-range {
+  position: relative;
+}
+
+.-input-range input[type="range"] {
+  padding: 0;
+  margin : 0;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.-input-range input[type="range"]::-moz-range-track {
+  border-color: transparent;
+}
+.-input-range input[type="range"].-input-range__lower {
+  position: absolute;
+}
+.-input-range input[type="range"].-input-range__upper {
+  position: relative;
+}
+.-input-range input[type="range"].-input-range__lower::-webkit-slider-thumb {
+  position: relative;
+  z-index: 2;
+}
+.-input-range input[type="range"].-input-range__lower::-moz-range-thumb {
+  transform: scale(1);
+  z-index: 1;
+}
+.-input-range input[type="range"].-input-range__upper {
+  position: relative;
+}

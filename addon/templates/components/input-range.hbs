@@ -1,0 +1,40 @@
+<input type='range'
+       disabled={{disabled}}
+       class='-input-range__lower'
+       min={{min}}
+       max={{max}}
+       step={{step}}
+       value={{low}}
+       oninput={{action 'onInput' 'low'}}
+       onchange={{action 'onChange' 'low'}}/>
+
+<input type='range'
+       disabled={{disabled}}
+       class='-input-range__upper'
+       min={{min}}
+       max={{max}}
+       step={{step}}
+       value={{high}}
+       oninput={{action 'onInput' 'high'}}
+       onchange={{action 'onChange' 'high'}}/>
+
+<style>
+.-input-range input[type="range"].-input-range__upper {
+  background: linear-gradient(to right,
+        transparent {{lowPercent}}%, {{color}} 0,
+        {{color}} {{highPercent}}%, transparent 0
+      ) no-repeat 0 45% / 100% 40%;
+}
+.-input-range input[type="range"].-input-range__upper::-webkit-slider-runnable-track {
+  background: linear-gradient(to right,
+        transparent {{lowPercent}}%, {{color}} 0,
+        {{color}} {{highPercent}}%, transparent 0
+      ) no-repeat 0 45% / 100% 40%;
+  }
+.-input-range input[type="range"].-input-range__upper::-moz-range-track {
+  background: linear-gradient(to right,
+        transparent {{lowPercent}}%, {{color}} 0,
+        {{color}} {{highPercent}}%, transparent 0
+      ) no-repeat 0 45% / 100% 40%;
+}
+</style>
