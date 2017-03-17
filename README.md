@@ -3,6 +3,8 @@
 `<input-range>` is an Ember component for HTML range inputs that express a low and high value.
 It has no dependencies.
 
+![](https://github.com/trek/ember-input-range/blob/master/example.png)
+
 ## Use
 `<input-range>` can be used by invoking the component via handlebars:
 
